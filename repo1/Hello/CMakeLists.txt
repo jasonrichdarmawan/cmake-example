@@ -4,7 +4,7 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 
 # Create a library called "Hello" which includes the source file "hello.cxx".
 # The extension is already found. Any number of sources could be listed here.
-add_library (Hello hello.cpp)
+add_library (Hello hello.cpp SubHello/subhello.cpp)
 
 # Make sure the compiler can find include files for our Hello library
 # when other libraries or executables link to Hello
@@ -18,3 +18,5 @@ install(TARGETS Hello
         DESTINATION lib)
 install(FILES hello.hpp 
         DESTINATION include)
+install(FILES SubHello/subhello.hpp
+        DESTINATION include/SubHello)
