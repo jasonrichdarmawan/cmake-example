@@ -1,5 +1,5 @@
 find_package(OpenCV REQUIRED)
-# prevent opencv2/core.hpp: No such file or directory
+# prevent cannot open source file "opencv2/core.hpp"
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 # Create a library called "Hello" which includes the source file "hello.cxx".
